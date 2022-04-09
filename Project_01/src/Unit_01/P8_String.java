@@ -56,12 +56,30 @@ class QuestionsOnString {
 	}
 
 	void reverseOfAString(String s) {
-		// Write Logic Here!
+		int l=s.length()-1;
+		for(int i=1;i>=0;i--) {
+			System.out.println(s.charAt(i));
+			System.out.println();
+		}
 
 	}
 	
 	void stringEqualOrNot(String s1,String s2) {
 		// Write Logic Here!
-		
+		int n=s1.length()-1;
+		int m=s2.length();
+		int flag=0;
+		if(n!=m) {
+			System.out.println("Not Equal\n");
+		}
+		else {
+			for(int i=0;i<n;i++)
+			{
+			if(flag==0)
+				System.out.println("Equal");
+			else
+				System.out.println("Not Equal");
+			}
+		}
 	}
 }

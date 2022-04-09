@@ -28,7 +28,19 @@ public class P9_Array {
 class QuestionsOnArray {
 
 	void sortAnArray(int[] arr) {
-		// write code here!
+		int n=arr.length;
+		//System.out.println(n);
+		for(int i=0;i<n;i++)
+			for(int j=i+1;j<n-1;j++) {
+				if (arr[i]>arr[j])
+				{
+					int temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+			}
+			for(int i1=0;i1<n;i1++)
+				System.out.println(arr[i1]);
 
 	}
 
